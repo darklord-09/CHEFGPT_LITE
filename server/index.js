@@ -10,7 +10,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-
+app.get('/',(req,res)=>{
+  res.send("HELLO CHEFS")
+})
 
 app.post('/ingredients', (req,result)=>{
    let commandString="What dishes can we make with ";
