@@ -10,7 +10,7 @@ function AddRecipe() {
 
 
   function handleSubmit(){
-    fetch('https://chefgptbackend.vercel.app/ingredients', {
+    fetch('https://chefgptbackend.vercel.app/recipe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

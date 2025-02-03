@@ -14,6 +14,8 @@ export async function query(data) {
         }
     );
     const result = await response.json();
+    console.log(process.env.BEARER_AUTH);
+    console.log(result);
     return result;
 }
 
